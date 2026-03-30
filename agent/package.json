@@ -1,0 +1,23 @@
+{
+  "name": "oragon-agents",
+  "version": "1.0.0",
+  "description": "Oragon Marketing OS — AI content generation agents",
+  "scripts": {
+    "script": "ts-node --compiler-options '{\"module\":\"commonjs\"}' script-generator.ts",
+    "email": "ts-node --compiler-options '{\"module\":\"commonjs\"}' email-copywriter.ts",
+    "image": "ts-node --compiler-options '{\"module\":\"commonjs\"}' image-prompt-generator.ts",
+    "whatsapp": "ts-node --compiler-options '{\"module\":\"commonjs\"}' whatsapp-copywriter.ts",
+    "leads": "ts-node --compiler-options '{\"module\":\"commonjs\"}' lead-brief-generator.ts",
+    "calendar": "ts-node --compiler-options '{\"module\":\"commonjs\"}' content-calendar.ts",
+    "check": "ts-node --compiler-options '{\"module\":\"commonjs\"}' compliance-checker.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.0",
+    "dotenv": "^17.3.1",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
